@@ -7,6 +7,7 @@
 // const main = document.getElementById('button');
 // main.addEventListener('click', function(){});
 
+
 // let input;
 // function addingEventListener(){
 //     input = document.getElementById('button');
@@ -15,12 +16,13 @@
 // input.addingEventListener('click', function(){}.to.be.true , false) ;
 // function clickHandler(event) {
 //     console.log('Button Clicked');
-//  }
-  
+//  } 
 // const addingEventListener = document.querySelector('.btn');
 // btn.addEventListener('click', function(event){
 //    console.log('Button Clicked');
 // });
+
+/*
 function addingEventListener(event,target){
     console.log(this.someVar);
     console.log(event,target);
@@ -28,7 +30,9 @@ function addingEventListener(event,target){
    
 addingEventListener = addingEventListener.bind({someVar: 1234});
    
-target.addEventListener('click', addingEventListener);
+target.addEventListener('click', addingEventListener);*/
+
+
 // window.addEventListener("click", () => {
 //     console.log("You knocked?");
 //   });
@@ -42,12 +46,20 @@ target.addEventListener('click', addingEventListener);
 // }
 // button.addEventListener("click", addingEventListener);
 
+/*
 let button = document.querySelector("button");
-  button.addEventListener("mousedown", event => {
+  document.addEventListener("mousedown", event => {
     if (event.button == 0) {
       console.log(false);
     } else if (event.button == 1) {
       console.log(true);
     }
-  });
+  });*/
  
+
+function addingEventListener(){
+  let input = document.getElementById('button')
+  input.addEventListener('click',()=>{
+    console.log('i was clicked')
+  })
+}
