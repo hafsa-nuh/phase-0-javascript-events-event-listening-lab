@@ -63,3 +63,5 @@ function addingEventListener(){
     console.log('i was clicked')
   })
 }
+addingEventListener()
+// document.querySelector('#button').addingEventListener('click', () => console.log('i was clicked'))
